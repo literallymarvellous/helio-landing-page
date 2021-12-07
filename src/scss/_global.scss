@@ -1,0 +1,334 @@
+@use "./variables" as *;
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  line-height: 1.4;
+  color: hsl(120, 12%, 34%);
+  background: hsl(133, 60%, 97%);
+  text-align: center;
+}
+
+h1 {
+  font-size: 48px;
+  margin: 0;
+}
+
+li {
+  list-style-type: none;
+  list-style-position: outside;
+}
+
+.clr-red {
+  color: $red;
+}
+
+.footer-bg {
+  background-color: $footer-clr;
+}
+
+.container {
+  max-width: 95vw;
+  margin-inline: auto;
+
+  @media screen and (min-width: 980px) {
+    max-width: 92vw;
+  }
+
+  @media screen and (min-width: 1024px) {
+    max-width: 90vw;
+  }
+}
+
+.heading {
+  font-family: $DM-Serif-Display;
+  color: $heading-color;
+  font-weight: 400;
+  font-size: $fs-48;
+
+  @media screen and (min-width: 768px) {
+    font-size: $fs-96;
+  }
+}
+
+.sub-heading {
+  font-family: $Neucha;
+  font-weight: 400;
+  color: $sub-heading-color;
+  font-size: $fs-18;
+
+  @media screen and (min-width: 768px) {
+    font-size: $fs-28;
+  }
+}
+
+.sub-heading-2 {
+  font-family: $Neucha;
+  font-weight: 400;
+  color: $sub-heading-color;
+  font-size: $fs-22;
+
+  @media screen and (min-width: 768px) {
+    font-size: $fs-28;
+  }
+}
+
+.sub-heading-red {
+  font-family: $Neucha;
+  font-weight: 400;
+  color: $red;
+  font-size: $fs-18;
+
+  @media screen and (min-width: 768px) {
+    font-size: $fs-24;
+  }
+}
+
+.text {
+  font-family: $Manrope;
+  font-weight: 400;
+  font-size: $fs-14;
+
+  @media screen and (min-width: 768px) {
+    font-size: $fs-24;
+  }
+}
+
+.heading-2 {
+  font-family: $DM-Serif-Display;
+  color: $heading-color;
+  font-weight: 400;
+  font-size: $fs-24;
+
+  @media screen and (min-width: 768px) {
+    font-size: $fs-36;
+    text-align: left;
+  }
+}
+
+.heading-2-center {
+  font-family: $DM-Serif-Display;
+  color: $heading-color;
+  font-weight: 400;
+  font-size: $fs-24;
+
+  @media screen and (min-width: 768px) {
+    font-size: $fs-48;
+    text-align: center;
+  }
+}
+
+.heading-phy {
+  font-family: $DM-Serif-Display;
+  color: $heading-color;
+  font-weight: 400;
+  font-size: $fs-24;
+
+  @media screen and (min-width: 768px) {
+    font-size: $fs-48;
+  }
+}
+
+.heading-3 {
+  font-family: $DM-Serif-Display;
+  color: $heading-color;
+  font-weight: 400;
+
+  @media screen and (min-width: 768px) {
+    font-size: $fs-30;
+    text-align: left;
+  }
+}
+
+.heading-3-popular {
+  font-family: $DM-Serif-Display;
+  color: $heading-color;
+  font-weight: 400;
+}
+
+.heading-3-about {
+  font-family: $DM-Serif-Display;
+  color: $heading-color;
+  font-weight: 400;
+  font-size: $fs-22;
+}
+
+.heading-red {
+  font-family: $DM-Serif-Display;
+  color: $red;
+  font-weight: 400;
+
+  @media screen and (min-width: 768px) {
+    font-size: $fs-36;
+    text-align: left;
+  }
+}
+
+.text-2 {
+  font-family: $Manrope;
+  font-weight: 400;
+  font-size: $fs-14;
+
+  @media screen and (min-width: 768px) {
+    font-size: $fs-20;
+    text-align: left;
+  }
+}
+
+.text-2-center {
+  font-family: $Manrope;
+  font-weight: 400;
+  font-size: $fs-14;
+
+  @media screen and (min-width: 768px) {
+    font-size: $fs-20;
+    text-align: center;
+  }
+}
+
+.text-2-popular {
+  font-family: $Manrope;
+  font-weight: 400;
+  font-size: $fs-14;
+}
+
+.text-3 {
+  font-family: $Manrope;
+  font-weight: 400;
+  font-size: $fs-11;
+}
+
+.text-footer {
+  font-family: $Manrope;
+  font-weight: 400;
+  font-size: $fs-11;
+
+  @media screen and (min-width: 768px) {
+    font-size: $fs-14;
+  }
+}
+
+.manrope-about {
+  font-family: $Manrope;
+  font-weight: 400;
+  font-size: $fs-16;
+
+  @media screen and (min-width: 1024px) {
+    font-size: $fs-20;
+  }
+}
+
+.neucha-list {
+  font-family: $Neucha;
+  font-weight: 400;
+  font-size: $fs-22;
+}
+
+.arrow {
+  padding-block: 5px;
+
+  @media screen and (min-width: 768px) {
+    padding-block: 10px;
+  }
+}
+
+.btn {
+  border: none;
+  background: none;
+  padding-inline: 0.3rem;
+}
+
+.text-wrapper {
+  @media screen and (min-width: 768px) {
+    font-size: $fs-20;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.wrapper {
+  @media screen and (min-width: 768px) {
+    font-size: $fs-20;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  @media screen and (min-width: 1024px) {
+    justify-content: space-around;
+  }
+}
+.order-1 {
+  order: 1;
+}
+
+.order-1-md {
+  @media screen and (min-width: 768px) {
+    order: 0;
+  }
+}
+
+.order-2 {
+  order: 2;
+}
+
+.order-3 {
+  order: 3;
+}
+
+.w-md-40 {
+  @media screen and (min-width: 768px) {
+    width: 40%;
+  }
+}
+
+.w-md-50 {
+  @media screen and (min-width: 768px) {
+    width: 50%;
+  }
+}
+
+.w-md-50 {
+  @media screen and (min-width: 1024px) {
+    width: 55%;
+  }
+}
+
+.as-center-lg {
+  @media screen and (min-width: 768px) {
+    align-self: center;
+  }
+}
+
+.popular-img {
+  img {
+    max-width: 180px;
+  }
+}
+
+.none {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+
+.none-md {
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.lin-abs {
+  position: absolute;
+}
